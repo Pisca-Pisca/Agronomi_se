@@ -1,7 +1,12 @@
-.logo{
-    width: 200px;
+.logo {
+  width: 200px;
 }
 
-*{
-    color: #fff !important;
+.navbar-nav > .nav-item > a.active  {
+  color: #77942e;
+  text-decoration: underline;
+}
+
+.navbar-nav > .nav-item > a:hover  {
+  color: #77942e;
 }

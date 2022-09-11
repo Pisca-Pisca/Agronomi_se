@@ -15,12 +15,16 @@
     />
 
     <link rel="stylesheet" href="css/menuSuperior.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/carousel.css" />
+    <link rel="stylesheet" href="css/passoPasso.css" />
 
     <title>Agronomi-se</title>
   </head>
   <body>
+    <header class="container">
       <nav
-        class="navbar navbar-expand-lg navbar-dark bg-dark"
+        class="navbar navbar-expand-lg"
         aria-label="Fifth navbar example"
       >
         <div class="container-fluid">
@@ -44,53 +48,129 @@
           </button>
     
           <div class="collapse navbar-collapse" id="navbarsExample05">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a href="#" class="nav-link px-2 link-dark">HOME</a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link px-2 link-dark">LOTES</a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link px-2 link-dark">FAÇA VOCÊ MESMO</a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link px-2 link-dark">PARCEIROS</a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link px-2 link-dark">SOBRE NÓS</a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link px-2 link-dark">FAQ</a>
-              </li>
-            </ul>
-    
-            <div class="dropdown text-end">
-              <a
-                href="#"
-                class="d-block link-dark text-decoration-none dropdown-toggle"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                <img
-                  src="https://github.com/mdo.png"
-                  alt="mdo"
-                  width="32"
-                  height="32"
-                  class="rounded-circle"
-                />
-              </a>
-              <ul class="dropdown-menu text-small" style="">
-                <li><a class="dropdown-item" href="#">New project...</a></li>
-                <li><a class="dropdown-item" href="#">Settings</a></li>
-                <li><a class="dropdown-item" href="#">Profile</a></li>
-                <li><hr class="dropdown-divider" /></li>
-                <li><a class="dropdown-item" href="#">Sign out</a></li>
+            <div class="container d-flex align-items-center justify-content-around">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a href="#" class="nav-link px-2 active">HOME</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link px-2">LOTES</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link px-2">FAÇA VOCÊ MESMO</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link px-2">PARCEIROS</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link px-2">SOBRE NÓS</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link px-2">FAQ</a>
+                </li>
               </ul>
+              
+              <div class="dropdown text-end">
+                        <a
+                          href="#"
+                          class="d-block link-dark text-decoration-none dropdown-toggle"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          <img
+                            src="https://github.com/mdo.png"
+                            alt="mdo"
+                            width="32"
+                            height="32"
+                            class="rounded-circle"
+                          />
+                        </a>
+                        <ul class="dropdown-menu text-small">
+                          <li><a class="dropdown-item" href="#">New project...</a></li>
+                          <li><a class="dropdown-item" href="#">Settings</a></li>
+                          <li><a class="dropdown-item" href="#">Profile</a></li>
+                          <li><hr class="dropdown-divider" /></li>
+                          <li><a class="dropdown-item" href="#">Sign out</a></li>
+                        </ul>
+              </div>
             </div>
           </div>
         </div>
       </nav>
+    </header>
+
+    <section id="section-carousel">
+      <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" >
+            <img src="/img/slide-img-1.png" class="d-block w-100" alt="Slide 1 - Horta Caseira">
+            <div class="carousel-caption d-flex justify-content-center align-items-center flex-column h-100">
+              <h1 class="text-dark">Cultive Orgânicos</h1>
+              <h5 class="text-dark">Manual para uma Horta Caseira e Agroecológica</h5>
+              <a href="#" class="btnSaibaMais">Saiba Mais</a>
+            </div>
+          </div>
+          <div class="carousel-item" >
+            <img src="/img/slide-img-2.png" class="d-block w-100" alt="Slide 2 - Alimentos Orgânicos">
+            <div class="carousel-caption d-flex justify-content-center align-items-center flex-column h-100">
+              <h1 class="text-light">Segurança Alimentar</h1>
+              <h5 class="text-light">O que são alimentos orgânicos e quais são seus benefícios?</h5>
+              <a href="#" class="btnSaibaMais2">Saiba Mais</a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="/img/slide-img-3.png" class="d-block w-100" alt="Slide 3 - Adubação Orgânica">
+            <div class="carousel-caption d-flex justify-content-center align-items-center flex-column h-100">
+              <h1 class="text-light">Adubação Natural</h1>
+              <h5 class="text-light">Conheça a sua importância !</h5>
+              <a href="#" class="btnSaibaMais2">Saiba Mais</a>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <section id="conteudo">
+      <div class="row">
+        <div class="descricao col-12">
+          <h2 class="titulo">Você já ouviu falar de Arrendamento Social?</h2>
+          <p class="subtitulo">Essa é a proposta da plataforma Agronomi-se.</p>
+          <p class="explicacao">Proprietários anunciam seus terrenos vazios, e os arrendam através de contrato comodato (sem custos), com a finalidade implantação de horta sustentável. Quem pode se inscrever para o arrendamento? Pessoas de baixa renda que necessitem de uma oportunidade.<p>
+  
+          <a href="#" class="botaoSaibaMais">Saiba Mais</a>
+        </div>
+      </div>
+
+      <div class="passoPasso row">
+        <div class="col-lg-4 col-12 col-sm-12 passo1 d-flex justify-content-center align-items-center flex-column">
+          <i class="fa-solid fa-wallet"></i>
+          <p>Escolha seu terreno</p>
+        </div>
+        <div class="col-lg-4 col-12 col-sm-12 passo2 d-flex justify-content-center align-items-center flex-column">
+          <i class="fa-solid fa-square-phone"></i>
+          <p>Entre em contato com proprietário</p>
+        </div>
+        <div class="col-lg-4 col-12 col-sm-12 passo3 d-flex justify-content-center align-items-center flex-column">
+          <i class="fa-solid fa-file-signature"></i>
+          <p>Assine o contrato Comodato</p>
+        </div>
+      </div>
+    </section>
+
+      <footer class="footer">
+        <div class="container">
+          <img src="/img/Agronomi-se-logo-2.png" alt="Logo Agronomi-se">
+          <p>Desenvolvido por PISCA Solutions © 2022</p>
+        </div>
+    </footer>
   </body>
 
   <!-- JavaScript Bundle with Popper -->
@@ -99,4 +179,6 @@
     integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
     crossorigin="anonymous"
   ></script>
+
+  <script src="https://kit.fontawesome.com/8b7c7f9a84.js" crossorigin="anonymous"></script>
 </html>
