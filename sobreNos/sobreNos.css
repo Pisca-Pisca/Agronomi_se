@@ -1,0 +1,34 @@
+
+.logo {
+    width: 200px;
+  }
+  
+  .navbar-nav > .nav-item > a.active  {
+    color: #77942e;
+    text-decoration: underline;
+  }
+  
+  .navbar-nav > .nav-item > a:hover  {
+    color: #77942e;
+  }
+
+  .footer{
+    background-color: #252525;
+    color: #fff;
+    text-align: center;
+    height: 150px;
+    font-size: 12px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer p{
+    margin-left: 6px;
+}
+
+.footer img {
+    width: 200px;
+}
